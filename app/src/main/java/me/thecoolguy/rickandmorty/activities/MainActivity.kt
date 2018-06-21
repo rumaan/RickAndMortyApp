@@ -1,7 +1,8 @@
-package me.thecoolguy.rickandmorty
+package me.thecoolguy.rickandmorty.activities
 
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.support.v7.app.AppCompatActivity
+import me.thecoolguy.rickandmorty.R
 
 class MainActivity : AppCompatActivity() {
 
