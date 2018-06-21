@@ -23,6 +23,15 @@
     app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toTopOf="parent"/>
+    app:layout_constraintTop_toTopOf="parent">
+
+    <!-- TODO: remove this -->
+    <TextView
+      android:id="@+id/response"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center"
+      tools:text="Response Text here"/>
+  </FrameLayout>
 
 </android.support.constraint.ConstraintLayout>
