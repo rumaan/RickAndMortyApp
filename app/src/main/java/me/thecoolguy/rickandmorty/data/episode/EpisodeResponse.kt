@@ -6,8 +6,8 @@ import me.thecoolguy.rickandmorty.data.info.Info
 data class EpisodeResponse(
 
         @Json(name = "results")
-        val results: List<Episode?>? = null,
+        val results: List<Episode>,
 
         @Json(name = "info")
-        val info: Info? = null
+        val info: Info
 )

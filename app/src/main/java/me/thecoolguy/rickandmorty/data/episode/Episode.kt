@@ -1,27 +1,32 @@
 package me.thecoolguy.rickandmorty.data.episode
 
 import com.squareup.moshi.Json
+import java.text.SimpleDateFormat
+import java.util.*
 
 data class Episode(
-
-        @Json(name = "air_date")
-        val airDate: String? = null,
-
-        @Json(name = "characters")
-        val characters: List<String?>? = null,
-
-        @Json(name = "created")
-        val created: String? = null,
-
-        @Json(name = "name")
-        val name: String? = null,
-
-        @Json(name = "episode")
-        val episode: String? = null,
-
         @Json(name = "id")
-        val id: Int? = null,
+        val id: Int,
 
         @Json(name = "url")
-        val url: String? = null
+        val url: String,
+
+        @Json(name = "air_date")
+        val airDate: String,
+
+        @Json(name = "characters")
+        val characters: List<String>,
+
+        @Json(name = "created")
+        val created: String,
+
+        @Json(name = "name")
+        val name: String,
+
+        @Json(name = "episode")
+        val episode: String
 )
+
+fun String.toDate(): Date {
+    return SimpleDateFormat("dd MMM, yyyy").parse(this)
+}

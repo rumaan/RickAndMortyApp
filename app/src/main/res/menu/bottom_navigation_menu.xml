@@ -2,14 +2,17 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
   <item
     android:id="@+id/menu_characters"
+    android:enabled="true"
     android:icon="@drawable/ic_people_black_24dp"
     android:title="@string/characters"/>
   <item
     android:id="@+id/menu_locations"
+    android:enabled="true"
     android:icon="@drawable/ic_location_black_24dp"
     android:title="@string/locations"/>
   <item
     android:id="@+id/menu_episodes"
+    android:enabled="true"
     android:icon="@drawable/ic_episode_black_24dp"
     android:title="@string/episodes"/>
 </menu>
